@@ -16,7 +16,7 @@ def main():
         x,y,z = line.split()        
         Nxyz.append([float(x), float(y), float(z)])
         c += 1
-        if c == natoms:
+        if c == natoms: #Only up to the last line of the file
             break
     xyz.close()
     ndim = np.shape(Nxyz)[1]
